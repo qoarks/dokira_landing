@@ -1,0 +1,38 @@
+# Fichiers et dossiers à ignorer lors de la construction de l'image Docker
+
+# Dépendances
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Fichiers de build
+.next
+out
+
+# Fichiers de développement
+.git
+.github
+.vscode
+*.md
+!README.md
+
+# Fichiers de test
+__tests__
+tests
+coverage
+jest.config.js
+jest.setup.js
+
+# Fichiers d'environnement
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Autres
+.DS_Store
+*.log
+*.swp
+*.swo

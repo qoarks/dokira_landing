@@ -1,0 +1,21 @@
+# Configuration Netlify pour QUAERA AI
+
+# Rediriger le sous-domaine Netlify vers le domaine principal
+[[redirects]]
+  from = "https://quaera1.netlify.app/*"
+  to = "https://quaera.ai/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://quaera1.netlify.app/*"
+  to = "https://quaera.ai/:splat"
+  status = 301
+  force = true
+
+# Forcer HTTPS
+[[redirects]]
+  from = "http://quaera.ai/*"
+  to = "https://quaera.ai/:splat"
+  status = 301
+  force = true

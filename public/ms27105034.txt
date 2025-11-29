@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Fichier de vérification de la propriété du domaine pour Microsoft 365 : placer dans la racine du site web",
+  "Domain": "quaera.ai",
+  "Id": "41f8686e-e2c7-4e2f-bebc-f14cdb8d2ddc"
+}

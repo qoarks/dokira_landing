@@ -1,0 +1,54 @@
+{
+	"name": "dokira-landing",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"directories": {
+		"test": "tests"
+	},
+	"scripts": {
+		"test": "jest",
+		"test:e2e": "cypress run",
+		"test:e2e:open": "cypress open",
+		"test:integration": "cypress run --spec 'cypress/e2e/integration.cy.js'",
+		"test:ci": "start-server-and-test dev http://localhost:3000 test:e2e",
+		"dev": "next dev --port 3001",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@testing-library/cypress": "^10.0.1",
+		"@testing-library/jest-dom": "^6.1.4",
+		"@testing-library/react": "^14.0.0",
+		"@types/react": "^18.2.0",
+		"autoprefixer": "^10.4.16",
+		"babel-jest": "^29.7.0",
+		"cypress": "^13.3.0",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0",
+		"postcss": "^8.4.31",
+		"start-server-and-test": "^2.0.1",
+		"tailwindcss": "^3.3.3",
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@react-email/render": "^1.4.0",
+		"@stripe/react-stripe-js": "^5.2.0",
+		"@stripe/stripe-js": "^8.1.0",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.0.0",
+		"framer-motion": "^10.16.4",
+		"lucide-react": "^0.284.0",
+		"next": "^13.5.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"resend": "^6.2.2",
+		"stripe": "^19.1.0",
+		"tailwind-merge": "^1.14.0"
+	}
+}

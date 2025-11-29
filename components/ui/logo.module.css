@@ -1,0 +1,121 @@
+.logoFull {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transform: scale(0.8);
+}
+
+.logoContainer {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+}
+
+.logoIcon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIcon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.logoText {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--gray-12);
+  font-family: "SF Pro Rounded", ui-rounded, "Nunito", "Inter", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+}
+
+.domain {
+  color: var(--gray-10);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* Sizes */
+.small .logoIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.small .logoText {
+  font-size: 16px;
+}
+
+.medium .logoIcon {
+  width: 48px;
+  height: 48px;
+}
+
+.medium .logoText {
+  font-size: 24px;
+}
+
+.large .logoIcon {
+  width: 64px;
+  height: 64px;
+}
+
+.large .logoText {
+  font-size: 38px;
+}
+
+/* Icon-only variant */
+.logoIcon.small {
+  width: 32px;
+  height: 32px;
+}
+
+.logoIcon.medium {
+  width: 48px;
+  height: 48px;
+}
+
+.logoIcon.large {
+  width: 64px;
+  height: 64px;
+}
+
+/* Text-only variant */
+.logoText.small {
+  font-size: 16px;
+}
+
+.logoText.medium {
+  font-size: 24px;
+}
+
+.logoText.large {
+  font-size: 32px;
+}
+
+/* Blink animation for top-left square */
+.blinkSquare {
+  animation: none;
+  will-change: opacity;
+}
+
+.logoContainer:hover .blinkSquare {
+  animation: blink 0.8s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
