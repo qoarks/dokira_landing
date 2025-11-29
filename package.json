@@ -12,7 +12,7 @@
 		"test:e2e:open": "cypress open",
 		"test:integration": "cypress run --spec 'cypress/e2e/integration.cy.js'",
 		"test:ci": "start-server-and-test dev http://localhost:3000 test:e2e",
-		"dev": "next dev --port 3001",
+		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
